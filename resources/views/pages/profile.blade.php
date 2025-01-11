@@ -16,33 +16,6 @@
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-
-    <style>
-        .hero-gradient {
-            background: linear-gradient(
-                135deg,
-                rgba(16, 185, 129, 0.7),
-                rgba(5, 150, 105, 0.8)
-            );
-        }
-        .card-shadow {
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
-                        0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .section-title {
-            position: relative;
-            padding-bottom: 10px;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 4px;
-            background-color: #10B981;
-        }
-    </style>
 </head>
 
 <body>
@@ -95,32 +68,16 @@
             </div>
         </div>
     </nav>
+<div class="relative">
+    <div class="bg-white p-2 rounded-xl shadow-lg">
+        <img src="{{ asset('assets/images/gunung.jpg') }}"
+             alt="Pesantren Background"
+             class="w-full h-[600px] object-cover rounded-lg">
+        <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+            <p class="text-5xl font-bold text-white">Pondok Pesantren Rabah</p>
+        </div>
+</div>
 
-
-    <section class="relative overflow-hidden bg-orange-50" id="profile">
-        <div class="container relative p-5 mx-auto md:p-10 ">
-
-            <body class="bg-lime-800">
-                <section class="relative overflow-hidden">
-                    <div class="hero-gradient absolute inset-0 z-0"></div>
-
-                    <div class="container mx-auto px-4 py-16 relative z-10">
-                        <div class="grid md:grid-cols-2 gap-10 items-center">
-                            <div class="text-teal-400">
-                                <h1 class="text-5xl font-bold mb-4">Pondok Pesantren Rabah</h1>
-                                <p class="text-xl opacity-90">Membentuk Insan Berkarakter & Berilmu</p>
-                            </div>
-
-                            <div class="relative">
-                                <div class="bg-white p-2 rounded-xl shadow-lg">
-                                    <img src="{{ asset('assets/images/mesir.jpg') }}"
-                                         alt="Pesantren Background"
-                                         class="w-full h-[400px] object-cover rounded-lg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
             <div class="relative z-10 pb-20 pt-28">
 
@@ -138,39 +95,38 @@
                         class="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[450px]">
                 </div>
 
+                <div class="card-aboutme md:w-[90%] ml-auto mt-[160px] md:mt-16 bg-white relative z-50 shadow-sm cursor-pointer"
+                data-aos="fade-up">
                 <div class="max-w-[300px] w-full">
-                    <p class="mt-3 ml-5 text-4xl font-semibold md:text-5xl text-primary">Profile</p>
+                    <p class="mt-3 ml-5 text-4xl font-semibold md:text-5xl text-primary">Profile </p>
                     <span class="block w-full h-[14px] mt-5 bg-primary"></span>
                 </div>
-
-                <div class="card-aboutme md:w-[90%] ml-auto mt-[160px] md:mt-16 bg-gray-50 relative z-50 shadow-sm cursor-pointer"
-                    data-aos="fade-up">
-                    <div class="p-8 border-b-[1px] header border-default-border-color">
-                        <div class="flex gap-5">
-                            <div class="w-6 h-6 bg-red-500 rounded-full"></div>
-                            <div class="w-6 h-6 bg-yellow-500 rounded-full"></div>
-                            <div class="w-6 h-6 bg-green-600 rounded-full"></div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-0 px-8 body">
-                        <div class="text-[48px] text-primary">❝</div>
-                        <p class="m-0 text-xs leading-6 md:leading-8 md:text-sm text-custom-text-card">“  “</p>
-                        <div class="flex items-center justify-end my-2 ">
-                            {{-- <a href="{{ url('about') }}"
-                                class="m-0 text-base font-medium text-primary hover:opacity-80 h-max">Read More <i
-                                    class="text-base ri-arrow-right-line"></i> </a> --}}
-                            <p class="text-[48px] text-primary h-max">❞</p>
-                        </div>
+                <div class="p-8 border-b-[1px] header border-default-border-color">
+                    <div class="flex gap-5">
+                        <div class="w-6 h-6 bg-red-500 rounded-full"></div>
+                        <div class="w-6 h-6 bg-yellow-500 rounded-full"></div>
+                        <div class="w-6 h-6 bg-green-600 rounded-full"></div>
                     </div>
                 </div>
-
-                <div class="max-w-[300px] w-full">
-                    <p class="mt-3 ml-5 text-4xl font-semibold md:text-5xl text-primary">Visi Misi</p>
-                    <span class="block w-full h-[14px] mt-5 bg-primary"></span>
+                <div class="flex flex-col gap-0 px-8 body">
+                    <div class="text-[48px] text-primary"></div>
+                    <p class="m-0 text-xs leading-6 md:leading-8 md:text-sm text-custom-text-card">isi</p>
+                    <div class="flex items-center justify-end my-2 ">
+                        {{-- <a href="{{ url('about') }}"
+                            class="m-0 text-base font-medium text-primary hover:opacity-80 h-max">Read More <i
+                                class="text-base ri-arrow-right-line"></i> </a> --}}
+                        <p class="text-[48px] text-primary h-max">❞</p>
+                    </div>
                 </div>
+            </div>
+
 
                 <div class="card-aboutme md:w-[90%] ml-auto mt-[160px] md:mt-16 bg-white relative z-50 shadow-sm cursor-pointer"
                     data-aos="fade-up">
+                    <div class="max-w-[300px] w-full">
+                        <p class="mt-3 ml-5 text-4xl font-semibold md:text-5xl text-primary">Visi Misi</p>
+                        <span class="block w-full h-[14px] mt-5 bg-primary"></span>
+                    </div>
                     <div class="p-8 border-b-[1px] header border-default-border-color">
                         <div class="flex gap-5">
                             <div class="w-6 h-6 bg-red-500 rounded-full"></div>
@@ -185,18 +141,19 @@
                             {{-- <a href="{{ url('about') }}"
                                 class="m-0 text-base font-medium text-primary hover:opacity-80 h-max">Read More <i
                                     class="text-base ri-arrow-right-line"></i> </a> --}}
-                            <p class="text-[48px] text-primary h-max">❞</p>
+                            <p class="text-[48px] text-primary h-max">
                         </div>
                     </div>
                 </div>
 
-                <div class="max-w-[300px] w-full">
-                    <p class="mt-3 ml-5 text-4xl font-semibold md:text-5xl text-primary">Sejarah</p>
-                    <span class="block w-full h-[14px] mt-5 bg-primary"></span>
-                </div>
+
 
                 <div class="card-aboutme md:w-[90%] ml-auto mt-[160px] md:mt-16 bg-white relative z-50 shadow-sm cursor-pointer"
                     data-aos="fade-up">
+                    <div class="max-w-[300px] w-full">
+                        <p class="mt-3 ml-5 text-4xl font-semibold md:text-5xl text-primary">Sejarah</p>
+                        <span class="block w-full h-[14px] mt-5 bg-primary"></span>
+                    </div>
                     <div class="p-8 border-b-[1px] header border-default-border-color">
                         <div class="flex gap-5">
                             <div class="w-6 h-6 bg-red-500 rounded-full"></div>
