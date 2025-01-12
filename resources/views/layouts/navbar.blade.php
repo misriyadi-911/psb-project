@@ -32,7 +32,7 @@
             </li>
 
             <li class="menu-item">
-                <a href="https://wa.me/+6285796272784" class="menu-link">
+                <a href="https://wa.me/+6281336451418" class="menu-link" target="_blank">
                     <i class='menu-icon bx bx-phone-call'></i>
                   <div data-i18n="Analytics">Panitia</div>
                 </a>

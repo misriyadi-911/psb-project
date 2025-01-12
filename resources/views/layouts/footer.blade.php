@@ -11,14 +11,6 @@
             <div class="flex flex-col w-full mx-auto justify-center lg:w-[30%] gap-4 mb-5 z-10">
                 <img src="{{ asset('assets/images/logopesantren.png') }}" alt="logo"
                     class="w-[250px] md:m-auto lg:m-0">
-                <p class="text-base font-light leading-7 text-white text-start md:text-center md:text-sm lg:text-start">
-                    Solusi
-                    Layanan Akses
-                    Internet
-                    Terbaik Di
-                    Kelasnya,
-                    Internet Secepat
-                    Cahaya Hadir Untuk Anda.</p>
             </div>
 
             <div
@@ -27,23 +19,21 @@
                     <p class="text-lg font-semibold">Kontak</p>
                     <div class="flex flex-wrap gap-1 mt-3 ">
                         <p class="text-sm font-semibold">Alamat :</p>
-                        <p class="text-sm font-extralight">Bates Timur,RT 6/RW 3,Desa Ellak Daya,Kec. Lenteng,Kab.
-                            Sumenep,Jawa Timur 69461</p>
+                        <p class="text-sm font-extralight">Dusun Rabah, Desa Sumedangan, Kecamatan Padamawu, Kabupaten Pamekasan, 69381</p>
                     </div>
                     <div class="flex flex-wrap gap-1 anchor-link ">
                         <p class="text-sm font-semibold">Email :</p>
-                        <a href="https://wa.me/6281335964620 " target="_blank"
-                            class="text-sm font-extralight">cs@BarokahNet</a>
+                        <a href="mailto:ppsabar150@gmail.com " target="_blank"
+                            class="text-sm font-extralight">ppsabar150@gmail.com</a>
                     </div>
                     <div class="flex flex-wrap gap-1 anchor-link">
                         <p class="text-sm font-semibold">CS :</p>
-                        <a href="https://wa.me/62817770044 " target="_blank" class="text-sm font-extralight">
-                            +62 817-770-044</a>
+                        <a href="https://wa.me/+6281336451418 " target="_blank" class="text-sm font-extralight">
+                        +62 813-3645-1418</a>
                     </div>
                     <div class="flex flex-wrap gap-1 anchor-link">
                         <p class="text-sm font-semibold">HD :</p>
-                        <a href="https://wa.me/62817770033 " target="_blank" class="text-sm font-extralight">
-                            `                                                                                                                                                                                               +62 817-770-033</a>
+                        <a href="https://wa.me/+6281336451418 " target="_blank" class="text-sm font-extralight">+62 813-3645-1418</a>
                     </div>
                 </div>
                 <iframe

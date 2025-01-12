@@ -76,7 +76,7 @@
               <!-- Logo -->
               <div class="app-brand justify-content-center">
                 <a href="/register" class="app-brand-link gap-2">
-                <img src="{{ asset('img/logo_landscape.png') }}" height="65" width="auto" alt="">
+                  <img src="{{ asset('img/logo_landscape.png') }}" height="65" width="auto" alt="">
                 </a>
               </div>
               <!-- /Logo -->
@@ -160,14 +160,6 @@
 
     <!-- / Content -->
 
-    <div class="buy-now">
-      <a
-        href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
-        target="_blank"
-        class="btn btn-danger btn-buy-now"
-        >Upgrade to Pro</a
-      >
-    </div>
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->

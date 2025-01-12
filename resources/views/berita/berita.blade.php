@@ -4,6 +4,14 @@
 
 @include('layouts.header_admin')
 
+@section('css')
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.8/datatables.min.css" rel="stylesheet">
+<style>
+ 
+</style>
+@endsection
 
 <body>
     <!-- Layout wrapper -->
@@ -43,7 +51,7 @@
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bxs-user"></i>
-                <div data-i18n="Layouts">Data Siswa</div>
+                <div data-i18n="Layouts">Data Santri</div>
               </a>
 
               <ul class="menu-sub">
@@ -83,6 +91,12 @@
               <a href="/berita" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-spreadsheet"></i>
                 <div data-i18n="Tables">Berita Harian</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="/register" class="menu-link" target="_blank">
+                <i class="menu-icon tf-icons bx bxs-user-plus"></i>
+                <div data-i18n="Tables">Registrasi Admin</div>
               </a>
             </li>
             
@@ -204,7 +218,7 @@
                   <button type="button" class="btn btn-success mb-3">Tambah Data</button>
                   </a>
                   <div class="table-responsive text-nowrap">
-                    <table class="table table-bordered">
+                    <table class="table table-bordered" id="data_table">
                       <thead>
                         <tr>
                           <th>Foto</th>
@@ -226,23 +240,12 @@
                             <td>{{ $data->penulis }}</td>
                             <td><?php echo implode (' ', array_slice(explode(' ', $data->isi), 0,5)). '...';?></td>
                             <td>
-                              <div class="dropdown">
-                                <button
-                                  type="button"
-                                  class="btn p-0 dropdown-toggle hide-arrow"
-                                  data-bs-toggle="dropdown"
-                                >
-                                  <i class="bx bx-dots-vertical-rounded"></i>
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="{{ url('/berita/edit') }}/{{ $data->id }}"
-                                    ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                                  >
-                                  <a class="dropdown-item" href="{{ url('/berita/hapus') }}/{{ $data->id }}"
-                                    ><i class="bx bx-trash me-1"></i> Hapus</a
-                                  >
-                                </div>
-                              </div>
+                              <a href="{{ url('/berita/edit') }}/{{ $data->id }}">
+                                <button type="button" class="btn btn-warning"><i class="bx bx-edit me-1"></i>Edit</button>
+                              </a>
+                              <a href="{{ url('/berita/hapus') }}/{{ $data->id }}">
+                                <button type="button" class="btn btn-danger"><i class="bx bx-trash me-1"></i>Hapus</button>
+                              </a>
                             </td>
                           </tr>
                         @endforeach
@@ -342,5 +345,35 @@
 
 
 @include('layouts.footer_form')
+
+@section('script')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.8/datatables.min.js"></script>
+
+<script>
+  $(document).ready( function () {
+    loadData();
+  } );
+
+  function loadData(){
+    $('#data_table').DataTable({     
+      language: {
+        search: "Cari :   ",
+        lengthMenu: "Tampilkan _MENU_ data",
+        info: "Menampilkan _START_ hingga _END_ dari _TOTAL_ data",
+        infoEmpty: "Menampilkan 0 hingga 0 dari 0 data", // Jika tidak ada data
+        infoFiltered: "(disaring dari _MAX_ total data)", // Menampilkan info tentang data yang difilter
+        paginate: {
+          previous: "Sebelumnya",
+          next: "Berikutnya",
+        },
+        zeroRecords: "Data tidak ditemukan" // Pesan jika tidak ada data yang cocok
+      }
+
+      
+    });
+  }
+</script>
+@endsection
 
 @include('layouts.script')

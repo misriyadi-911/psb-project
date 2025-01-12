@@ -82,15 +82,17 @@ Route::group(['middleware' => ['auth'], 'as' => 'admin.'], function(){
 
     Route::get("/password/edit", [UsersController::class, 'edit_password']);
     Route::post("/password/update", [UsersController::class, 'update_password'])->name('password.update');
+
+    Route::get('/register', function(){
+        return view ('auth.register');
+    });
+    Route::post('/proses_register', [UsersController::class, 'proses_register'])->name(('proses_register'));
+    Route::get('/logout', [UsersController::class, 'logout'])->name(('logout'));
 });
 
 Route::get('/login', [UsersController::class, 'index'])->name('login');
 Route::post('/proses_login', [UsersController::class, 'proses_login'])->name(('proses_login'));
-Route::get('/logout', [UsersController::class, 'logout'])->name(('logout'));
-Route::get('/register', function(){
-    return view ('auth.register');
-});
-Route::post('/proses_register', [UsersController::class, 'proses_register'])->name(('proses_register'));
+
 
 
 Route::get("/berita/detail/{id}", [PageController::class, 'detail_berita']);

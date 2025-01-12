@@ -56,10 +56,10 @@ class SiswaController extends Controller
                             <button type="button" class="btn btn-info"><i class="bx bx-show me-1"></i>Detail</button>
                         </a>
                         <a class="" href="'.url('/siswa/mts/edit/'.$data_siswa->id) .'">
-                            <button type="button" class="btn btn-warning"><i class="bx bx-show me-1"></i>Edit</button>
+                            <button type="button" class="btn btn-warning"><i class="bx bx-edit me-1"></i>Edit</button>
                         </a>
                         <a class="" href="'.url('/siswa/mts/hapus/'.$data_siswa->id) .'">
-                            <button type="button" class="btn btn-danger"><i class="bx bx-show me-1"></i>Hapus</button>
+                            <button type="button" class="btn btn-danger"><i class="bx bx-trash me-1"></i>Hapus</button>
                         </a>';
             })
             ->rawColumns(['foto','aksi'])
@@ -100,10 +100,10 @@ class SiswaController extends Controller
                             <button type="button" class="btn btn-info"><i class="bx bx-show me-1"></i>Detail</button>
                         </a>
                         <a class="" href="'.url('/siswa/smp/edit/'.$data_siswa->id) .'">
-                            <button type="button" class="btn btn-warning"><i class="bx bx-show me-1"></i>Edit</button>
+                            <button type="button" class="btn btn-warning"><i class="bx bx-edit me-1"></i>Edit</button>
                         </a>
                         <a class="" href="'.url('/siswa/smp/hapus/'.$data_siswa->id) .'">
-                            <button type="button" class="btn btn-danger"><i class="bx bx-show me-1"></i>Hapus</button>
+                            <button type="button" class="btn btn-danger"><i class="bx bx-trash me-1"></i>Hapus</button>
                         </a>';
             })
             ->rawColumns(['foto','aksi'])
@@ -144,10 +144,10 @@ class SiswaController extends Controller
                             <button type="button" class="btn btn-info"><i class="bx bx-show me-1"></i>Detail</button>
                         </a>
                         <a class="" href="'.url('/siswa/ma/edit/'.$data_siswa->id) .'">
-                            <button type="button" class="btn btn-warning"><i class="bx bx-show me-1"></i>Edit</button>
+                            <button type="button" class="btn btn-warning"><i class="bx bx-edit me-1"></i>Edit</button>
                         </a>
                         <a class="" href="'.url('/siswa/ma/hapus/'.$data_siswa->id) .'">
-                            <button type="button" class="btn btn-danger"><i class="bx bx-show me-1"></i>Hapus</button>
+                            <button type="button" class="btn btn-danger"><i class="bx bx-trash me-1"></i>Hapus</button>
                         </a>';
             })
             ->rawColumns(['foto','aksi'])

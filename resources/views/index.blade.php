@@ -121,7 +121,7 @@
                 <div class="flex flex-wrap gap-5">
                     <a data-aos="fade-right" data-aos-delay="1100" href="/daftar" target="_blank"
                         class="flex items-center gap-2 px-5 py-2 text-sm font-medium tracking-wide text-white uppercase rounded-full w-max bg-primary">
-                        <i class="text-xl ri-whatsapp-line"></i>
+                        <!-- <i class="text-xl ri-whatsapp-line"></i> -->
                         Daftar Sekarang
                     </a>
                 </div>
@@ -638,10 +638,10 @@
                 </p>
             </div>
             <div class="flex flex-col chat-body gap-y-3">
-                <a href="https://wa.me/+62817770044" target="_blank"
+                <a href="https://wa.me/+6281336451418" target="_blank"
                     class="flex items-center gap-5 p-3 bg-semi-sky-blue">
-                    <img src="{{ asset('assets/images/fav-icon.png') }}" alt="icon" class="w-8 h-8">
-                    <p class="text-sm">+62 817-770-044</p>
+                    <img src="{{ asset('img/logo_bulat.png') }}" alt="icon" class="w-8 h-8">
+                    <p class="text-sm">+62 813-3645-1418</p>
                 </a>
             </div>
         </div>

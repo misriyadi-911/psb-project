@@ -1,5 +1,5 @@
 @section('title')
-  Detail Data Siswa
+  Detail Data Santri SMP
 @endsection
 
 @include('layouts.header_admin')
@@ -42,7 +42,7 @@
             <li class="menu-item active">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bxs-user"></i>
-                <div data-i18n="Layouts">Data Siswa</div>
+                <div data-i18n="Layouts">Data Santri</div>
               </a>
 
               <ul class="menu-sub">
@@ -82,6 +82,12 @@
               <a href="/berita" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-spreadsheet"></i>
                 <div data-i18n="Tables">Berita Harian</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="/register" class="menu-link" target="_blank">
+                <i class="menu-icon tf-icons bx bxs-user-plus"></i>
+                <div data-i18n="Tables">Registrasi Admin</div>
               </a>
             </li>
             

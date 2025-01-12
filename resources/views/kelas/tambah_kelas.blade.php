@@ -84,6 +84,12 @@
                 <div data-i18n="Tables">Berita Harian</div>
               </a>
             </li>
+            <li class="menu-item">
+              <a href="/register" class="menu-link" target="_blank">
+                <i class="menu-icon tf-icons bx bxs-user-plus"></i>
+                <div data-i18n="Tables">Registrasi Admin</div>
+              </a>
+            </li>
             
             
           </ul>
